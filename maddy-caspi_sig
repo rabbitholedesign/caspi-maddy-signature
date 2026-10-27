@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Werewolf & Vampire</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;background:transparent;}
+body{display:flex;justify-content:center;width:100%;overflow:hidden;}
+.signature{width:430px;max-width:100%;padding:15px;font-family:'Playfair Display SC',serif;color:#D1D1D1;}
+.row{display:flex;align-items:center;justify-content:center;gap:12px;}
+.label{font-family:'Playfair Display SC',serif;font-size:20px;letter-spacing:2px;writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap;flex-shrink:0;color:#D1D1D1;}
+.werewolf-label{background:linear-gradient(to right,transparent,#375787);}
+.vampire-label{background:linear-gradient(to left,transparent,#873737);}
+.photo{flex-shrink:0;padding:2px;background:#bfc3ca;}
+.photo-inner{width:100%;height:100%;overflow:hidden;}
+.photo img{width:100%;height:100%;object-fit:cover;display:block;}
+.werewolf-photo{width:130px;height:210px;clip-path:polygon(12% 0,100% 0,86% 18%,100% 78%,78% 100%,0 100%,8% 65%,0 20%);}
+.werewolf-photo .photo-inner{clip-path:polygon(12% 0,100% 0,86% 18%,100% 78%,78% 100%,0 100%,8% 65%,0 20%);}
+.vampire-photo{width:180px;height:145px;clip-path:polygon(0 12%,76% 0,100% 20%,92% 84%,72% 100%,8% 88%);}
+.vampire-photo .photo-inner{clip-path:polygon(0 12%,76% 0,100% 20%,92% 84%,72% 100%,8% 88%);}
+.quote{font-size:15px;margin-top:5px;letter-spacing:1px;color:#D1D1D1;text-align:center;line-height:1.35;}
+.quote-one{background:linear-gradient(to top,transparent,#873737);background-size:120px 100%;background-repeat:no-repeat;background-position:center;}
+.quote-two{background:linear-gradient(to bottom,transparent,#375787);background-size:320px 100%;background-repeat:no-repeat;background-position:center;}
+</style>
+</head>
+<body>
+<div class="signature">
+<div class="row">
+<div class="label werewolf-label">✧ Werewolf ✧</div>
+<div class="photo werewolf-photo">
+<div class="photo-inner"><img src="https://2img.net/i.imgur.com/thHCqee.gif" alt="Werewolf"></div>
+</div>
+<div class="photo vampire-photo">
+<div class="photo-inner"><img src="https://2img.net/i.imgur.com/JmatsXZ.gif" alt="Vampire"></div>
+</div>
+<div class="label vampire-label">✧ Vampire ✧</div>
+</div>
+<div class="quote quote-one">Without you</div>
+<div class="quote quote-two">there's no way I can sleep tonight</div>
+</div>
+</body>
+</html>
